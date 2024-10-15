@@ -24,7 +24,6 @@ var layerControl = L.control.layers(baseLayers).addTo(map);
 
 layerControl.addBaseLayer(satellite, 'Satellite');
 
-let US = "United States of America";
 
 function createPopup(latitude, longitude, country, name, link) {L.marker([latitude, longitude], {icon: greenIcon}).addTo(map).bindPopup("<b>"+name+"</b><br />"+country+"<br />"+"<a class='link' href="+link+" target='_blank'>"+link+"</a>");}
 function createPopupNoLink(latitude, longitude, country, name) {L.marker([latitude, longitude], {icon: greenIcon}).addTo(map).bindPopup("<b>"+name+"</b><br />"+country+"<br />");}
@@ -32,6 +31,7 @@ function createPopupNoLink(latitude, longitude, country, name) {L.marker([latitu
 createPopup(-34.051096, 150.978795, 'Australia', 'Open-pool Australian lightwater reactor (OPAL)', 'https://www.ansto.gov.au/research/facilities/opal-multi-purpose-reactor');
 createPopup(28.158056, 78.409444, 'India', 'Narora Atomic Power Station', 'https://www.npcil.nic.in/content/322_1_OperatingPerformance.aspx');
 // Power Generating American Nuclear Plants 
+let US = "United States of America";
 createPopup(35.310278, -93.231389, US, 'Arkansas Nuclear One', 'https://www.nrc.gov/info-finder/reactors/ano1.html');
 createPopup(40.623333, -80.430556, US, 'Beaver Valley Nuclear Power Station', 'https://www.nrc.gov/info-finder/reactors/bv1.html');
 createPopup(41.243611, -88.229167, US, 'Braidwood Nuclear Generating Station', 'https://www.nrc.gov/info-finder/reactors/brai1.html');
@@ -46,7 +46,7 @@ createPopup(46.471111, -119.333889, US, 'Columbia Generating Station', 'https://
 createPopup(32.298333, -97.785, US, 'Comanche Peak Nuclear Power Plant', 'https://www.nrc.gov/info-finder/reactors/cp1.html');
 createPopup(40.361944, -95.641389, US, 'Cooper Nuclear Station', 'https://www.nrc.gov/info-finder/reactors/cns.html');
 createPopup(41.975556, -86.565278, US, 'Donald C. Cook Nuclear Plant', 'https://www.nrc.gov/info-finder/reactors/cook1.html');
-createPopup(41.596667, -83.086389, US, 'Davis–Besse Nuclear Power Station', 'https://www.nrc.gov/info-finder/reactors/davi.html');
+createPopup(41.596667, -83.086389, US, 'Davis-Besse Nuclear Power Station', 'https://www.nrc.gov/info-finder/reactors/davi.html');
 createPopup(35.210833, -120.856111, US, 'Diablo Canyon Power Plant', 'https://www.nrc.gov/info-finder/reactors/diab1.html');
 createPopup(41.389722, -88.268056, US, 'Dresden Generating Station', 'https://www.nrc.gov/info-finder/reactors/dres2.html');
 createPopup(31.223056, -85.111667, US, 'Joseph M. Farley Nuclear Plant', 'https://www.nrc.gov/info-finder/reactors/far1.html');
@@ -124,9 +124,7 @@ createPopup(47.479013, 19.058363, 'Hungary', 'BME Nukleáris Technikai Intézet 
 createPopup(47.488544, 18.953365, 'Hungary', 'KFKI Reaktor', 'https://www.aeki.kfki.hu/index.php?contentid=77&lang=en');
 createPopup(19.162479, 73.133336, 'India', 'Bhabha Atomic Research Centre Reactors (4)', 'https://www.barc.gov.in/reactor/');
 createPopup(12.571605, 80.173164, 'India', 'Indira Gandhi Centre for Atomic Research Reactors (2)', 'http://www.igcar.gov.in/index.html');
-var circle = L.circle([-6.918, 107.615], {radius: 5000}).addTo(map).bindPopup("<b>Triga Mark III</b><br />Indonesia<br />");
-circle.setStyle({color: 'green'});
-// NEED LOCATION FOR TRIGA MARK III IN INDONESIA
+createPopupNoLink(-6.887788, 107.607357, 'Indonesia', 'TRIGA MARK III')
 createPopup(-7.7780155, 110.413848, 'Indonesia', 'Kartini Nuclear Research Reactor', 'https://www.batan.go.id/index.php/en/deputy-en/fasilitas-nuklir/143-kartini/1576-kartini-reactor-yogyakarta');
 createPopup(-6.351963, 106.663339, 'Indonesia', 'Reaktor Serba Guna G.A. Siwabessy', 'https://www.batan.go.id/index.php/id/kedeputian/fasilitas-nuklir/144-gasiwabessy/153-reaktor-serba-guna-ga-siwabessy');
 createPopup(35.73837, 51.388190, 'Iran', 'راکتور تحقیقاتی تهران (Tehran Research Reactor)', 'https://www.iranwatch.org/iranian-entities/teheran-nuclear-research-center-tnrc');
@@ -142,8 +140,8 @@ createPopup(36.266286, 140.54742, 'Japan', 'High-Temperature Engineering Test Re
 createPopup(36.460530, 140.606431, 'Japan', 'Nuclear Safety Research Reactor', 'https://www.jaea.go.jp/english/04/ntokai/kasokuki/kasokuki_03.html');
 createPopup(36.454775, 140.601204, 'Japan', 'Tōkai Japanese Research Reactor 3', 'https://jrr3.jaea.go.jp/jrr3e/index.htm');
 createPopup(36.453975, 140.600672, 'Japan', 'Tōkai Japanese Research Reactor 4', 'https://www.jaea.go.jp/english/04/ntokai/kasokuki/kasokuki_02.html');
-createPopup(34.649242, 135.587143, 'Japan', '近畿大学原子炉 (UTR－KINKI)', 'https://www.kindai.ac.jp/rd/research-center/aeri/facility/'); 
-createPopup(34.387130, 135.347934, 'Japan', 'Kyoto Univeristy Critical Assembly', 'http://www.rri.kyoto-u.ac.jp/CAD/index-EN.html'); 
+createPopup(34.649242, 135.587143, 'Japan', '近畿大学原子炉 (UTR-KINKI)', 'https://www.kindai.ac.jp/rd/research-center/aeri/facility/'); 
+createPopup(34.387130, 135.347934, 'Japan', 'Kyoto University Critical Assembly', 'http://www.rri.kyoto-u.ac.jp/CAD/index-EN.html'); 
 createPopup(32.462833, 35.972833, 'Jordan', 'Jordan Research and Training Reactor', 'https://jrtr.gov.jo/');
 createPopup(43.352333, 77.143145, 'Kazakhstan', 'VVR-K', 'https://sci.kz/');
 createPopup(43.606390, 51.282870, 'Kazakhstan', 'IVG-1M', 'https://www.nnc.kz/en/facilities/ivg1m.html');
@@ -162,46 +160,45 @@ createPopup(32.009992, 72.172637, 'Pakistan', 'Plutonium Production Reactor', 'h
 createPopup(32.008543, 72.172562, 'Pakistan', 'Plutonium Production Reactor', 'https://en.wikipedia.org/wiki/Khushab_Nuclear_Complex');
 createPopup(32.001230, 72.172539, 'Pakistan', 'Plutonium Production Reactor', 'https://en.wikipedia.org/wiki/Khushab_Nuclear_Complex');
 createPopup(32.020203, 72.207824, 'Pakistan', 'Plutonium Production Reactor', 'https://en.wikipedia.org/wiki/Khushab_Nuclear_Complex');
-createPopup(-11.799460, -77.011983, 'Peru', 'RP-10 Research Reactor', 'https://www.ipen.gob.pe/index.php/ipen/infraestructura/centro-nuclear-racso'); //May take a while to load this website, but it should load after ~30 seconds.
+createPopup(-11.799460, -77.011983, 'Peru', 'RP-10 Research Reactor', 'https://www.ipen.gob.pe/index.php/ipen/infraestructura/centro-nuclear-racso');
 createPopup(-12.085560, -77.009208, 'Peru', 'RP-0 Zero Power Training Reactor', 'https://www.ipen.gob.pe/index.php/ipen/infraestructura/sede-san-borja');
 createPopup(52.123007, 21.344054, 'Poland', 'Maria Research Reactor', 'https://www.ncbj.gov.pl/en/o-nas/maria-research-reactor');
 createPopup(38.812269, -9.094747, 'Portugal', 'RPI Research Reactor', 'http://www.ctn.tecnico.ulisboa.pt/facilities/uk_rpi.htm');
 createPopup(44.953206, 24.977883, 'Romania', 'TRIGA Research Reactor', 'https://nuclear.ro/en/reactor-triga-si-laborator-de-examinare-post-iradiere-lepi/');
-// Russia Power Plants + Research
 createPopup(56.841582, 61.323003, 'Russia', 'Beloyarskaya', 'https://en.wikipedia.org/wiki/Beloyarsk_Nuclear_Power_Station');
 createPopup(51.274414, 39.200914, 'Russia', 'Novovoronezh', 'https://en.wikipedia.org/wiki/Novovoronezh_Nuclear_Power_Plant');
-createPopup(51.275433, 39.200850, 'Russia', 'Novovoronezh', 'https://en.wikipedia.org/wiki/Novovoronezh_Nuclear_Power_Plant');
-createPopup(51.281903, 39.210247, 'Russia', 'Novovoronezh', 'https://en.wikipedia.org/wiki/Novovoronezh_Nuclear_Power_Plant');
+// createPopup(51.275433, 39.200850, 'Russia', 'Novovoronezh', 'https://en.wikipedia.org/wiki/Novovoronezh_Nuclear_Power_Plant');
+// createPopup(51.281903, 39.210247, 'Russia', 'Novovoronezh', 'https://en.wikipedia.org/wiki/Novovoronezh_Nuclear_Power_Plant');
 createPopup(59.853094, 29.049397, 'Russia', 'Leningradskaya', 'https://en.wikipedia.org/wiki/Leningrad_Nuclear_Power_Plant');
-createPopup(59.838956, 29.034119, 'Russia', 'Leningradskaya', 'https://en.wikipedia.org/wiki/Leningrad_Nuclear_Power_Plant');
-createPopup(59.840719, 29.041486, 'Russia', 'Leningradskaya', 'https://en.wikipedia.org/wiki/Leningrad_Nuclear_Power_Plant');
+// createPopup(59.838956, 29.034119, 'Russia', 'Leningradskaya', 'https://en.wikipedia.org/wiki/Leningrad_Nuclear_Power_Plant');
+// createPopup(59.840719, 29.041486, 'Russia', 'Leningradskaya', 'https://en.wikipedia.org/wiki/Leningrad_Nuclear_Power_Plant');
 createPopup(67.465556, 32.478889, 'Russia', 'Kolskaya', 'https://en.wikipedia.org/wiki/Kola_Nuclear_Power_Plant');
 createPopup(68.050623, 166.539675, 'Russia', 'Bilibibskaya', 'https://en.wikipedia.org/wiki/Bilibino_Nuclear_Power_Plant');
 createPopup(51.677506, 35.609044, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
-createPopup(51.676514, 35.607211, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
-createPopup(51.674911, 35.604183, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
-createPopup(51.674344, 35.603239, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
+// createPopup(51.676514, 35.607211, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
+// createPopup(51.674911, 35.604183, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
+// createPopup(51.674344, 35.603239, 'Russia', 'Kurskaya', 'https://en.wikipedia.org/wiki/Kursk_Nuclear_Power_Plant');
 createPopup(54.168150, 33.239683, 'Russia', 'Smolenskaya', 'https://en.wikipedia.org/wiki/Smolensk_Nuclear_Power_Plant');
-createPopup(54.167397, 33.239061, 'Russia', 'Smolenskaya', 'https://en.wikipedia.org/wiki/Smolensk_Nuclear_Power_Plant');
-createPopup(54.164897, 33.237044, 'Russia', 'Smolenskaya', 'https://en.wikipedia.org/wiki/Smolensk_Nuclear_Power_Plant');
+// createPopup(54.167397, 33.239061, 'Russia', 'Smolenskaya', 'https://en.wikipedia.org/wiki/Smolensk_Nuclear_Power_Plant');
+// createPopup(54.164897, 33.237044, 'Russia', 'Smolenskaya', 'https://en.wikipedia.org/wiki/Smolensk_Nuclear_Power_Plant');
 createPopup(57.903331, 35.055978, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
-createPopup(57.904383, 35.057406, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
-createPopup(57.905642, 35.059153, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
-createPopup(57.906742, 35.060661, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
+// createPopup(57.904383, 35.057406, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
+// createPopup(57.905642, 35.059153, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
+// createPopup(57.906742, 35.060661, 'Russia', 'Kalininskaya', 'https://en.wikipedia.org/wiki/Kalinin_Nuclear_Power_Plant');
 createPopup(52.092269, 47.951139, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
-createPopup(52.092856, 47.953253, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
-createPopup(52.093417, 47.955364, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
-createPopup(52.093997, 47.957472, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
+// createPopup(52.092856, 47.953253, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
+// createPopup(52.093417, 47.955364, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
+// createPopup(52.093997, 47.957472, 'Russia', 'Balakovskaya', 'https://en.wikipedia.org/wiki/Balakovo_Nuclear_Power_Plant');
 createPopup(47.602982, 42.374613, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
-createPopup(47.601665, 42.373583, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
-createPopup(47.600493, 42.372639, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
-createPopup(47.599263, 42.371523, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
+// createPopup(47.601665, 42.373583, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
+// createPopup(47.600493, 42.372639, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
+// createPopup(47.599263, 42.371523, 'Russia', 'Volgodonskaya', 'https://en.wikipedia.org/wiki/Rostov_Nuclear_Power_Plant');
 createPopup(59.598880, 30.110579, 'Russia', 'PIK', 'http://www.pnpi.spb.ru/en/facilities/reactor-pik');
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
+createPopup(46.094197, 14.597680, 'Slovenia', 'TRIGA MARK II', 'https://ric.ijs.si/en/splosna-predstavitev/');
+createPopup(-25.798010, 27.919783, 'South Africa', 'SAFARI-1', 'https://www.ntp.co.za/safari-1/');
+createPopup(37.247233, 127.080938, 'South Korea', 'AGN-201K', 'https://rrec.khu.ac.kr/english/center/sub_01.html');
+createPopup(36.426761, 127.369789, 'South Korea', 'HANARO', 'https://www.kaeri.re.kr/board?menuId=MENU01104');
+createPopup(46.521326, 6.570517, 'Switzerland', 'CROCUS', 'https://www.epfl.ch/labs/lrs/facilities/crocus-reactor/');
 createPopup();
 createPopup();
 createPopup();
