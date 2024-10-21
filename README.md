@@ -109,7 +109,7 @@ I have thoroughly scoured the area for any potential reactor buildings, but ther
 
 My best guess is [this complex](https://maps.app.goo.gl/xpdbkZkrKC3g5kpE9) at 33.337540, 36.433921.
 
-![[images/srr-1_1.png]]
+![](images/srr-1_1.png)
 
 On top of a suspicious entry checkpoint and fence in what is otherwise an agrarian part of rural Damascus the site has a large number of buildings and facilities, and at least 13 visible staff vehicles.
 
