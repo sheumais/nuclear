@@ -199,16 +199,20 @@ createPopup(-25.798010, 27.919783, 'South Africa', 'SAFARI-1', 'https://www.ntp.
 createPopup(37.247233, 127.080938, 'South Korea', 'AGN-201K', 'https://rrec.khu.ac.kr/english/center/sub_01.html');
 createPopup(36.426761, 127.369789, 'South Korea', 'HANARO', 'https://www.kaeri.re.kr/board?menuId=MENU01104');
 createPopup(46.521326, 6.570517, 'Switzerland', 'CROCUS', 'https://www.epfl.ch/labs/lrs/facilities/crocus-reactor/');
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
-createPopup();
+
+var circle = L.circle([ 33.3517210, 36.4496080], {radius: 3000}).addTo(map).bindPopup("<b>SSR-1</b><br />Syria<br />");
+circle.setStyle({color: 'green'});
+// Potential SSR-1 Location at 33.337361, 36.434059, (https://maps.app.goo.gl/7GfmVFxw2ZvZ4U9L9)
+
+// createPopup(??, ??, 'Taiwan', 'THOR', ??);
+// createPopup(??, ??, 'Thailand', 'TRR-1/M1', ??);
+// createPopup(??, ??, 'Turkey', 'ITU-TRR', ??);
+// createPopup(??, ??, 'Ukraine', 'WWR-M Kiev', ??);
+// createPopup(??, ??, 'Ukraine', 'SNI, IR-100', ??);
+// createPopup(??, ??, 'Ukraine', 'SPh IR-100', ??);
+// createPopup(??, ??, 'United Kingdom', 'Neptune', 'https://www.onr.org.uk/our-work/what-we-regulate/defence/defence-sites/neptune-reactor-site/');
+// createPopup();
+// createPopup();
+// createPopup();
+// createPopup();
+// createPopup();
