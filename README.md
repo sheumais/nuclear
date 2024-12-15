@@ -77,7 +77,7 @@ It thus seems likely that the large grey-roofed building is the reactor building
 
 #### CROCUS
 https://maps.app.goo.gl/ehc9WTFxhB3PYPeQ6
-This was a bitch to find.
+
 I spent over an hour combing through different sources, guessing things. I even installed the university's app in hopes that it would help me.
 Eventually I found [this page](https://www.epfl.ch/labs/lrs/facilities/) which showed two labs on floor zero of the physics department, that had staircases.
 This lined up with another image I found earlier
@@ -120,3 +120,60 @@ It is also 33km south east from Damascus, which is mentioned in [this](https://d
 ![](images/srr-1_2.png)
 
 This "animal production research station" *might* be this facility, which could also host the research reactor. It seems a little farfetched I do admit, but this is as much as I can do in one evening of research.
+
+### Taiwan
+
+#### THOR
+https://maps.app.goo.gl/ooQbkEDsjMNAt6et7
+
+The [University website](https://nthu-en.site.nthu.edu.tw/p/403-1003-4798.php) has a campus map which shows us the reactor building.
+
+![](images/nthu-new.png)
+
+### Thailand
+
+#### TRR-1
+https://maps.app.goo.gl/QCfLz5ccLBwQ5bhP6
+The location of the TRR-1 is apparently at the Thailand Institute of Nuclear Technology.
+On google maps there are two locations. I evaluated both locations, and found the reactor at the site in the city.
+
+The building we are looking for looks like [this](https://www.tint.or.th/en/nuclear/Research%20Reactor)
+
+![](images/trr-1_1.png)
+
+![](images/trr_2.png)
+
+Successfully located it on streetview.
+
+### Turkey
+
+#### TRR
+
+According to https://enerji.itu.edu.tr/iletisim, the energy institute is located at this specific building complex, also corroborated by the campus map.
+
+![](images/turkey1.png)
+
+There is an image on turkish wikipedia of this reactor [here](https://tr.wikipedia.org/wiki/%C4%B0T%C3%9C_Enerji_Enstit%C3%BCs%C3%BC#/media/Dosya:%C4%B0T%C3%9C_Triga_Mark-II_Deneysel_N%C3%BCkleer_Reakt%C3%B6r.JPG) which has geolocation to this complex too.
+
+The only building that looks big enough to fit the image is the large square on the right. Compared to the car parking spaces, everything else is barely 10 metres in width, which seemingly does not match the photograph.
+
+#### TR-2
+
+General site location confirmation from archived image
+
+![](images/turkey_tr2.png)
+
+![](images/cnaem2.jpg)
+
+As of the time of writing, [https://www.taek.gov.tr/](https://www.taek.gov.tr/) is offline, and cannot be accessed. For a government organisation in charge of nuclear facilities, this seems incompetent.
+
+[This website](https://www.matriseb.com/component/spsimpleportfolio/item/32-cekmece-nuclear-research-and-training-center-istanbul-t) has an image that seems to show reactor 2
+
+![](images/IMG_6535.jpg)
+
+This is visually consistent with a specific building I found:
+Note the red trim and the indents in the building as well as the road running along the bottom of both images.
+
+![](images/turkey2.png)
+
+There is still some uncertainty due to the presence of a path that seemingly should be visible in the photo, as well as the road behind the building, however this is still the strongest candidate.

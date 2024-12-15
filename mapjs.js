@@ -204,9 +204,10 @@ var circle = L.circle([ 33.3517210, 36.4496080], {radius: 3000}).addTo(map).bind
 circle.setStyle({color: 'green'});
 // Potential SSR-1 Location at 33.337361, 36.434059, (https://maps.app.goo.gl/7GfmVFxw2ZvZ4U9L9)
 
-// createPopup(??, ??, 'Taiwan', 'THOR', ??);
-// createPopup(??, ??, 'Thailand', 'TRR-1/M1', ??);
-// createPopup(??, ??, 'Turkey', 'ITU-TRR', ??);
+createPopup(24.789908, 120.992062, 'Taiwan', 'THOR', 'https://thor.site.nthu.edu.tw/');
+createPopup(13.853611, 100.566552, 'Thailand', 'TRR-1/M1', 'https://www.tint.or.th/en/nuclear/Research%20Reactor');
+createPopup(41.108046, 29.031117, 'Turkey', 'ITU-TRR', 'http://www.triga.itu.edu.tr/');
+createPopup(41.025556, 28.757222, 'Turkey', 'TR-2', 'https://en.wikipedia.org/wiki/%C3%87NAEM#Research_reactor_TR-2')
 // createPopup(??, ??, 'Ukraine', 'WWR-M Kiev', ??);
 // createPopup(??, ??, 'Ukraine', 'SNI, IR-100', ??);
 // createPopup(??, ??, 'Ukraine', 'SPh IR-100', ??);
