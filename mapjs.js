@@ -211,9 +211,33 @@ createPopup(41.025556, 28.757222, 'Turkey', 'TR-2', 'https://en.wikipedia.org/wi
 // createPopup(??, ??, 'Ukraine', 'WWR-M Kiev', ??);
 // createPopup(??, ??, 'Ukraine', 'SNI, IR-100', ??);
 // createPopup(??, ??, 'Ukraine', 'SPh IR-100', ??);
-// createPopup(??, ??, 'United Kingdom', 'Neptune', 'https://www.onr.org.uk/our-work/what-we-regulate/defence/defence-sites/neptune-reactor-site/');
+var circle = L.circle([ 52.909765, -1.433700], {radius: 300}).addTo(map).bindPopup("<b>Neptune</b><br />United Kingdom<br /><a class='link' href='https://www.onr.org.uk/our-work/what-we-regulate/defence/defence-sites/neptune-reactor-site/' target='_blank'>https://www.onr.org.uk/our-work/what-we-regulate/defence/defence-sites/neptune-reactor-site/</a>");
+circle.setStyle({color: 'green'});
+createPopup(43.588128, -112.965859, US, 'Advanced Test Reactor', 'https://www.inl.gov/research-capabilities/nuclear-energy/advanced-test-reactor/');
+// createPopup();
+// createPopup();
+createPopup(41.413275, 69.453322, 'Uzbekistan', 'WWR-SM', 'https://inp.uz/en/pages/nuclear-reactor-vvr-sm');
+createPopup(11.956404, 108.452208, 'Vietnam', 'Đà Lạt Research Reactor', 'https://nri.gov.vn/en');
+
+// https://en.wikipedia.org/wiki/List_of_commercial_nuclear_reactors
+
 // createPopup();
 // createPopup();
 // createPopup();
 // createPopup();
 // createPopup();
+// createPopup();
+// createPopup();
+// createPopup();
+// createPopup();
+// createPopup();
+// createPopup();
+
+// https://github.com/googollee/eviltransform
+// for china coordinate transform
+
+// https://www.gem.wiki/Category:Nuclear_power_plants
+// nuclear power plant data (including exact locations)
+
+// https://rospearce.carto.com/tables/nuclear_power_stations_around_the_world/public
+// more data, unexact
